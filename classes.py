@@ -120,6 +120,7 @@ class Combate:
 
         if self.personagem.esta_vivo():
             print("\nVocê venceu!")
+            self.personagem.hp += 60
         else:
             print("\nVocê perdeu!")
 
