@@ -130,12 +130,12 @@ class Combate:
                 else:       # se ele nao conseguir roletar 10 para dar o golpe, ele vai dar o ataque basico
                     print(f"{self.inimigo.nome} atacou {self.personagem.nome}!")
                     self.inimigo.atacar(self.personagem)
-            '''
+            
             print("\n___________________________________________________")
             print(f"\n{self.personagem.nome} tem {self.personagem.hp} HP restantes.")
             print(f"{self.inimigo.nome} tem {self.inimigo.hp} HP restantes.\n")
             print("___________________________________________________")
-            '''
+            
             
             self.alternar_turno()   # alterna o turno 
             self.contador_turnos += 1   # atualiza o contador para o player poder ter o golpe especial
@@ -146,7 +146,7 @@ class Combate:
         else:
             print("\nVocê perdeu!")
 
-'''
+
 personagem = Personagem("Gabrieow", 100, 20)
 inimigo = Inimigo("deus ancião", 1500, 15)
 mata_deus = Item("Matadora de deuses", "Espada", 100)
@@ -158,4 +158,3 @@ personagem.exibir_stats()
 
 combate = Combate(personagem, inimigo)
 combate.iniciar_combate()
-'''
